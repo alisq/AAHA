@@ -17,6 +17,32 @@ h1, h2, h3, h4, h5 {
  
 
 h1 {
-    font-size:4rem; 
+    font-size:3rem; 
 
 } 
+
+
+.text-right {
+    text-align:right; 
+}
+
+.menu {
+    vertical-align:middle;
+}
+.nav__button {
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    border:none;
+    margin:0 1em;
+    transition:all 0.2s;
+    background:$white;
+    vertical-align: middle;
+    cursor:pointer;
+    border:1px solid $darkred;
+
+    &:hover {
+        transform:scale(2.5);
+    }
+}
+
