@@ -3,7 +3,7 @@ var gainst = document.getElementById('gainst');
 var ousing = document.getElementById('ousing');
 var lienation = document.getElementById('lienation');
 
-letterSpeed = 100;
+letterSpeed = 50;
 initialPause = 10000;
 completedPause = 3000;
 var typewriterRchiects = new Typewriter(rchitects, {
