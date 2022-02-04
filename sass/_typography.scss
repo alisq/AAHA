@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Sukima';
+    src: url('../fonts/Sukima_stencil_regular.otf') format('opentype');
+    font-weight:normal;
+}
+
+@font-face {
+    font-family: 'Sukima';
+    src: url('../fonts/Sukima_stencil_bold.otf') format('opentype');
+    font-weight:bold;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Sukima';
+}
+ 
+
+h1 {
+    font-size:4rem; 
+
+} 
