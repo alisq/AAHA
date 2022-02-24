@@ -1,60 +1,18 @@
-var rchitects = document.getElementById('rchitects');
-var gainst = document.getElementById('gainst');
-var ousing = document.getElementById('ousing');
-var lienation = document.getElementById('lienation');
 
-letterSpeed = 50;
-initialPause = 10000;
-completedPause = 3000;
-var typewriterRchiects = new Typewriter(rchitects, {
-  cursor:'',
-  loop: true,
-  delay: letterSpeed,
-});
+$(".campaign .close").click(function(){  
+  $(".campaign").removeClass("active");  
+  $("#campaigns").removeClass("active");
+})
 
-typewriterGainst  = new Typewriter(gainst, {
-  cursor:'',
-  loop: true,
-  delay: letterSpeed,
-});
-typewriterOusing  = new Typewriter(ousing, {
-  cursor:'',
-  loop: true,
-  delay: letterSpeed,
-});
-typewriterLienation  = new Typewriter(lienation, {
-  cursor:'',
-  loop: true,
-  delay: letterSpeed,
-});
+$(".campaign h2, .campaign h3").click(function(e){
+  
+  if (!$(this).parent().parent().hasClass("active")) {
+      $(".campaign.active").removeClass("active");
+      $(this).parent().parent().addClass("active");
 
-typewriterRchiects
-  .pauseFor(initialPause)
-  .typeString('rchitects')
-  .pauseFor(completedPause)
-  .start();
+      $("#campaigns").addClass("active");
 
+  }
+  
+})
 
-  typewriterGainst
-  .pauseFor(initialPause)
-  .typeString('gainst')
-  .pauseFor(completedPause+(letterSpeed*3*2))
-  .start();
-
-  typewriterOusing
-  .pauseFor(initialPause)
-  .typeString('ousing')
-  .pauseFor(completedPause+(letterSpeed*3*2))
-  .start();
-
-  typewriterLienation
-  .pauseFor(initialPause)
-  .typeString('lienation')
-  .pauseFor(completedPause)
-  .start();
-
-
-
-  $(".nav__button").click(function(){
-    $(document).scrollTo($(this).data("target"),500)
-  })

@@ -10,41 +10,37 @@
     font-weight:bold;
 }
 
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Sukima';
-
-    color: #FF3B1E;
+body {
+    font-size:20px;
 }
- 
 
-h1 {
-    font-size:3rem; 
+h3 {
+    font-family:courier;
+    font-weight:normal;
+    font-size:1rem;
+}
+h1, h2 {
+    font-family: 'Sukima';
+}
 
-} 
-
+p {
+    margin: 0.5em 0;
+}
 
 .text-right {
-    text-align:right; 
+    text-align: right;
 }
 
-.menu {
-    vertical-align:middle;
+#campaigns.active .campaign:not(.active) .bottom-zone {
+  display:none  
 }
-.nav__button {
-    width:10px;
-    height:10px;
-    border-radius:50%;
-    border:none;
-    margin:0 1em;
-    transition:all 0.2s;
-    background:$white;
-    vertical-align: middle;
-    cursor:pointer;
-    border:1px solid $darkred;
 
-    &:hover {
-        transform:scale(2.5);
+#campaigns.active .campaign:not(.active) .top-zone {
+    transform:rotate(90deg) translatey(-0.9vw);
+    transform-origin: 0 0;
+    width:100vh;
+
+    & h2, & h3 {
+        display:inline;
     }
 }
-

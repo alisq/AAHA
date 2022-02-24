@@ -1,0 +1,9 @@
+@mixin peripherals {
+  position:fixed;
+  background:black;
+  height:$peripheral-height;
+  width:100%;
+  display:flex;
+  align-items: center;
+//   justify-content: center;
+}

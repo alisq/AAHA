@@ -21,58 +21,94 @@ html, body {
   src: url("../fonts/Sukima_stencil_bold.otf") format("opentype");
   font-weight: bold; }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Sukima';
-  color: #FF3B1E; }
+body {
+  font-size: 20px; }
 
-h1 {
-  font-size: 3rem; }
+h3 {
+  font-family: courier;
+  font-weight: normal;
+  font-size: 1rem; }
+
+h1, h2 {
+  font-family: 'Sukima'; }
+
+p {
+  margin: 0.5em 0; }
 
 .text-right {
   text-align: right; }
 
-.menu {
-  vertical-align: middle; }
+#campaigns.active .campaign:not(.active) .bottom-zone {
+  display: none; }
 
-.nav__button {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: none;
-  margin: 0 1em;
-  transition: all 0.2s;
-  background: #eeeed7;
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid #981519; }
-  .nav__button:hover {
-    transform: scale(2.5); }
+#campaigns.active .campaign:not(.active) .top-zone {
+  transform: rotate(90deg) translatey(-0.9vw);
+  transform-origin: 0 0;
+  width: 100vh; }
+  #campaigns.active .campaign:not(.active) .top-zone h2, #campaigns.active .campaign:not(.active) .top-zone h3 {
+    display: inline; }
 
 header {
   position: fixed;
-  top: 0;
-  display: grid;
+  background: black;
+  height: 5vh;
   width: 100%;
-  grid-template-columns: 1fr 2fr;
-  z-index: 1; }
+  display: flex;
+  align-items: center;
+  top: 0;
+  justify-content: space-between; }
+
+#campaigns {
+  position: relative;
+  top: 5vh;
+  width: 189vw;
+  height: calc(100vh - (5vh * 2));
+  overflow-y: hidden; }
+  #campaigns.active {
+    width: 100vw; }
+  #campaigns.active .campaign {
+    width: 2vw; }
+
+.campaign {
+  display: inline-block;
+  width: 21vw;
+  height: 100%;
+  overflow: scroll;
+  border-right: 1px solid #000;
+  transition: width 0.4s ease-out;
+  position: relative;
+  padding: 1em;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */ }
+  .campaign::-webkit-scrollbar {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    display: none; }
+  .campaign .close {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 50px;
+    cursor: pointer; }
+  .campaign.active {
+    width: calc(84vw - 1px) !important; }
+    .campaign.active .close {
+      display: block; }
+
+.top-zone,
+.bottom-zone {
+  max-width: 1100px;
+  margin: auto; }
 
 footer {
   position: fixed;
-  bottom: 0;
+  background: black;
+  height: 5vh;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  vertical-align: middle;
-  z-index: 1; }
-
-.section {
-  width: 100%;
-  height: 100vh;
-  position: relative; }
-  .section--interior {
-    width: calc(100% - 10vw);
-    height: calc(100vh - 10vw);
-    background: #eeeed7;
-    position: absolute;
-    top: 5vw;
-    left: 5vw; }
+  align-items: center;
+  bottom: 0; }
