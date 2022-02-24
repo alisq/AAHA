@@ -38,7 +38,8 @@ p {
 .text-right {
   text-align: right; }
 
-.campaign h2, .campaign:not(.active) h3, .campaign:not(.active) p, .campaign:not(.active) img {
+.campaign:not(.active) h2,
+.campaign:not(.active) h3, .campaign:not(.active) p, .campaign:not(.active) img {
   cursor: pointer; }
 
 #campaigns.active .campaign:not(.active) .bottom-zone {
@@ -58,8 +59,9 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  top: 0;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 0 0.5em;
+  top: 0; }
 
 #campaigns {
   position: relative;
@@ -114,4 +116,6 @@ footer {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5em;
   bottom: 0; }
