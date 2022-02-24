@@ -6,8 +6,10 @@
   padding: 0; }
 
 html, body {
-  background: black;
-  color: #eeeed7; }
+  background: fixed url("../img/gradient.jpg");
+  color: #eeeed7;
+  min-height: 100vh;
+  background-size: 200vw; }
 
 @font-face {
   font-family: 'Sukima';
@@ -20,7 +22,8 @@ html, body {
   font-weight: bold; }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Sukima'; }
+  font-family: 'Sukima';
+  color: #FF3B1E; }
 
 h1 {
   font-size: 3rem; }
