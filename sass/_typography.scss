@@ -31,6 +31,10 @@ p {
     text-align: right;
 }
 
+.campaign h2, .campaign:not(.active) h3, .campaign:not(.active) p, .campaign:not(.active) img {
+    cursor:pointer;
+}
+
 #campaigns.active .campaign:not(.active) .bottom-zone {
   display:none  
 }
