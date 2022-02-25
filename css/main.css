@@ -99,9 +99,15 @@ header {
   position: fixed;
   top: 50px;
   left: -100vw;
-  transition: left 0.4s ease-out; }
+  transition: left 0.4s ease-out;
+  display: grid;
+  grid-template-columns: 21vw 79vw; }
   #action.active {
     left: 0; }
+  #action__sidebar {
+    height: 100%;
+    border-right: 2px solid #000;
+    padding: 1em; }
 
 #campaigns {
   position: relative;
