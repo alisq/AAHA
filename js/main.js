@@ -1,4 +1,8 @@
 
+$("#take-action").click(function(){
+  $("#action, #take-action").toggleClass("active")
+})
+
 $(".campaign .close").click(function(){  
   $(".campaign").removeClass("active");  
   $("#campaigns").removeClass("active");

@@ -27,6 +27,32 @@ p {
     margin: 0.5em 0;
 }
 
+
+button,
+ {
+    border:1px solid #000;
+    padding:0.5em 1em ;
+    background:#FFF;
+    cursor: pointer;
+    border-radius:1.2em;
+    position:relative;
+    top:-4px;
+    font-family:'Sukima';
+    font-weight:bold;
+
+    &:hover,
+    &.active {
+        color:#FFF;
+        background:#000;
+    }
+
+    &.active:hover {
+        background:#FFF;
+        color:#000;
+    }
+}
+
+
 .text-right {
     text-align: right;
 }
@@ -37,13 +63,21 @@ p {
 }
 
 #campaigns.active .campaign:not(.active) .bottom-zone {
-  display:none  
+  display:none;
 }
 
 #campaigns.active .campaign:not(.active) .top-zone {
     transform:rotate(90deg) translatey(-0.9vw);
     transform-origin: 0 0;
-    width:100vh;
+    width:calc(100vh - 200px);
+    height:2vw;
+    
+    display:flex;
+    position:relative;
+    // left:2vw;
+    // top:1vw;
+    padding:0;
+    align-items: center;
 
     & h2, & h3 {
         display:inline;
