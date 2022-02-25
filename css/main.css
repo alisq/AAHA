@@ -177,15 +177,28 @@ footer {
   bottom: 0;
   border-top: 1px solid #000; }
 
+#test-menu {
+  position: fixed;
+  z-index: 200;
+  height: 100vh;
+  transform: translateX(-95%);
+  transition: all 0.1s; }
+  #test-menu:hover {
+    background: red;
+    mix-blend-mode: luminosity;
+    transform: translateX(0); }
+  #test-menu button {
+    margin: 1em; }
+
 #big-title {
-  font-size: 500px;
+  font-size: 22vw;
   position: absolute;
   z-index: 100;
   font-family: 'Sukima';
   color: #FF3B1E;
   font-weight: bold;
   mix-blend-mode: luminosity;
-  width: 4700px;
+  width: 230vw;
   top: 50%;
   transform: translateY(-50%);
   display: none;
@@ -231,6 +244,8 @@ footer {
   animation-iteration-count: infinite;
   pointer-events: none;
   display: none; }
+  #test-grid.active {
+    display: block; }
 
 @keyframes moveBG {
   0% {

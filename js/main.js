@@ -7,6 +7,27 @@
 // },500)
 
 
+
+$("#test-1").click(function(){
+  $("#big-title").toggleClass("active")
+  $("#test-layers, #test-statement, #test-purchase, #test-grid").removeClass("active");
+})
+
+$("#test-2").click(function(){
+  $("#test-layers, #test-statement, #test-purchase").toggleClass("active")
+  $("#big-title, #test-grid").removeClass("active");
+})
+
+$("#test-3").click(function(){
+  $("#test-grid").toggleClass("active")
+  $("#test-layers, #test-statement, #test-purchase, #big-title").removeClass("active");
+})
+
+
+$("#test-4").click(function(){
+  
+  $("#test-grid, #test-layers, #test-statement, #test-purchase, #big-title").removeClass("active");
+})
 $("#take-action").click(function(){
   $("#action, #take-action").toggleClass("active")
 })
