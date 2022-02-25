@@ -1,4 +1,12 @@
 
+
+// setTimeout(function(){
+//     $.scrollTo("#section-10",2000)
+
+
+// },500)
+
+
 $("#take-action").click(function(){
   $("#action, #take-action").toggleClass("active")
 })
@@ -23,3 +31,17 @@ $(".campaign h2, .campaign h3, .campaign p, .campaign img").click(function(e){
   
 })
 
+
+
+//MAP STUFF
+var bigmap = L.map('action').setView([49.8738449,-97.432404], 4.2);
+
+L.tileLayer(
+  'https://api.mapbox.com/styles/v1/iamasq/cl02nf3ov001415p76k2hrty5/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiaWFtYXNxIiwiYSI6ImNrc296bmRvaDAxMGkydnBsNGcwMzQwdGcifQ.PkRl94Sjs9H2IM0auw-zdg', {
+      tileSize: 512,
+      zoom:25,
+      zoomOffset: -1,
+      attribution: '© mapbpx'
+  }).addTo(bigmap);
+
+  

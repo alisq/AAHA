@@ -7,7 +7,9 @@
 
 html, body {
   min-height: 100vh;
-  background-size: 200vw; }
+  background-size: 200vw;
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none; }
 
 @font-face {
   font-family: 'Sukima';
@@ -32,6 +34,12 @@ h1, h2 {
 
 p {
   margin: 0.5em 0; }
+
+.caption {
+  margin-top: -0.5em;
+  font-size: 0.75em;
+  font-family: Sukima;
+  text-align: right; }
 
 button {
   border: 1px solid #000;
@@ -98,7 +106,7 @@ header {
 #campaigns {
   position: relative;
   top: 50px;
-  width: 189vw;
+  width: 231vw;
   height: calc(100vh - (50px * 2));
   overflow-y: hidden; }
   #campaigns.active {
@@ -119,6 +127,11 @@ header {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */ }
+  .campaign.truth {
+    background: #000;
+    color: #FFF; }
+    .campaign.truth .close {
+      color: #FFF; }
   .campaign .bottom-zone {
     opacity: 1;
     transition: opacity 0.4s ease-out; }
@@ -144,7 +157,7 @@ header {
     width: 100%;
     margin: 0.5em 0; }
   .campaign.active {
-    width: calc(100vw - 371px) !important; }
+    width: calc(100vw - 415px) !important; }
     .campaign.active .close {
       display: block; }
 
@@ -163,3 +176,64 @@ footer {
   padding: 0 0.5em;
   bottom: 0;
   border-top: 1px solid #000; }
+
+#big-title {
+  font-size: 500px;
+  position: absolute;
+  z-index: 100;
+  font-family: 'Sukima';
+  color: #FF3B1E;
+  font-weight: bold;
+  mix-blend-mode: luminosity;
+  width: 4700px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  pointer-events: none; }
+
+#test-layers,
+#test-statement,
+#test-purchase {
+  position: fixed;
+  z-index: 100;
+  mix-blend-mode: color-dodge;
+  pointer-events: none;
+  display: none; }
+
+#test-statement {
+  top: 30%;
+  right: 0; }
+
+#test-purchase {
+  height: 80vh;
+  bottom: 0;
+  right: 50%; }
+
+#test-layers.active,
+#test-statement.active,
+#test-purchase.active,
+#big-title.active {
+  display: block; }
+
+#test-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2500vh;
+  height: 100vh;
+  background: url("../img/grid.png");
+  background-size: 100%;
+  z-index: 100;
+  opacity: 0.15;
+  mix-blend-mode: luminosity;
+  animation-name: moveBG;
+  animation-duration: 290s;
+  animation-iteration-count: infinite;
+  pointer-events: none;
+  display: none; }
+
+@keyframes moveBG {
+  0% {
+    left: 0; }
+  100% {
+    left: -2500vh; } }

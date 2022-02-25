@@ -27,7 +27,7 @@ header {
     
     position:relative;
     top:$peripheral-height;
-    width:189vw;
+    width:231vw;
     height:calc(100vh - (#{$peripheral-height} * 2));
     overflow-y:hidden;
     
@@ -64,6 +64,15 @@ header {
 
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+
+    &.truth {
+        background:#000;
+        color:#FFF;
+        
+        & .close {
+            color:#FFF;
+        }
+    }
 
     & .bottom-zone {
 
@@ -103,7 +112,7 @@ header {
     }
 
     &.active {
-        width:calc(100vw - 371px)!important;
+        width:calc(100vw - 415px)!important;
 
         & .close {
             display:block;
