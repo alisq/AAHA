@@ -6,7 +6,7 @@
   padding: 0; }
 
 html, body {
-  background: #000;
+  background: #1e211a;
   color: #eeeed7;
   min-height: 100vh;
   background-size: 200vw;
@@ -110,7 +110,7 @@ header {
   height: calc(100vh - (50px * 2));
   width: 100vw;
   z-index: 2;
-  background: #000;
+  background: #1e211a;
   position: fixed;
   top: 50px;
   left: -100vw;
@@ -150,11 +150,11 @@ header {
   /* Firefox */ }
   .campaign.truth {
     background: #eeeed7;
-    color: #000; }
+    color: #1e211a; }
     .campaign.truth .close {
-      color: #000; }
+      color: #1e211a; }
       .campaign.truth .close:hover {
-        color: #000;
+        color: #1e211a;
         opacity: 0.5; }
   .campaign .bottom-zone {
     opacity: 1;
@@ -181,7 +181,7 @@ header {
     width: 100%;
     margin: 0.5em 0; }
   .campaign.active {
-    width: calc(100vw - 415px) !important; }
+    width: calc(100vw - 380px) !important; }
     .campaign.active .close {
       display: block; }
 
@@ -206,6 +206,18 @@ footer {
   padding: 0 0.5em;
   bottom: 0;
   border-top: 1px solid #eeeed7; }
+
+.cover {
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e211a; }
 
 #test-menu {
   position: fixed;

@@ -38,8 +38,15 @@ $("header, footer").hover(function(){
 
 
 $("#take-action").click(function(){
-  $("#action, #take-action").toggleClass("active")
+  $("#action, #take-action").addClass("active")
 })
+
+$("#campaign-button").click(function(){
+  $("#action, #take-action").removeClass("active")
+})
+
+
+
 
 $(".campaign .close").click(function(){  
   $(".campaign").removeClass("active");  
@@ -86,3 +93,83 @@ L.tileLayer(
   }).addTo(bigmap);
 
   
+
+
+  $(".cover").click(function(){
+    $(this).fadeOut(200);
+  })
+
+  setTimeout(function(){
+    $(".cover").fadeOut(200);
+
+  },5000)
+
+
+
+  var rchitecture = document.getElementById('rchitecture');
+var gainst = document.getElementById('gainst');
+var ousing = document.getElementById('ousing');
+var lienation = document.getElementById('lienation');
+
+letterSpeed = 50;
+initialPause = 1000;
+completedPause = 3000;
+var typewriterRchiects = new Typewriter(rchitecture, {
+  cursor:'',
+  loop: false,
+  delay: letterSpeed,
+});
+
+typewriterGainst  = new Typewriter(gainst, {
+  cursor:'',
+  loop: false,
+  delay: letterSpeed,
+});
+typewriterOusing  = new Typewriter(ousing, {
+  cursor:'',
+  loop: false,
+  delay: letterSpeed,
+});
+typewriterLienation  = new Typewriter(lienation, {
+  cursor:'',
+  loop: false,
+  delay: letterSpeed,
+});
+
+
+
+$("footer").on('mouseover',function(){
+  typewriterRchiects
+  .pauseFor(initialPause)
+  .typeString('rchitecture')
+  .pauseFor(completedPause)
+  .start()
+  .deleteChars(11)
+
+
+  typewriterGainst
+  .pauseFor(initialPause)
+  .typeString('gainst')
+  .pauseFor(completedPause+(letterSpeed*5*2))
+  .start()
+  .deleteChars(6)
+  
+
+  typewriterOusing
+  .pauseFor(initialPause)
+  .typeString('ousing')
+  .pauseFor(completedPause+(letterSpeed*5*2))
+  .start()
+  .deleteChars(6)
+  
+
+  typewriterLienation
+  .pauseFor(initialPause)
+  .typeString('lienation')
+  .pauseFor(completedPause+(letterSpeed*2*2))
+  .start()
+  .deleteChars(9)
+  
+
+})
+
