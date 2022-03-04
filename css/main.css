@@ -121,14 +121,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0.5em;
   top: 0;
   border-bottom: 1px solid #eeeed7; }
   header h1 {
     width: 50%;
     height: 100%;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    padding: 0 0.5em;
+    cursor: pointer; }
     header h1:hover {
       background: #eeeed7;
       color: #1e211a; }
@@ -235,7 +236,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0.5em;
   bottom: 0;
   border-top: 1px solid #eeeed7; }
 
