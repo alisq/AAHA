@@ -137,7 +137,7 @@ header {
         border:none;
         font-size:50px;
         cursor:pointer;
-
+ 
         &:hover {
             color:$foreground;
             opacity:0.75; 
@@ -151,7 +151,7 @@ header {
     }
 
     &.active {
-        width:calc(100vw - 380px)!important;
+        width:calc(100vw - 480px)!important;
 
         & .close {
             display:block;
