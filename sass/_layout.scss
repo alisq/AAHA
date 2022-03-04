@@ -1,7 +1,7 @@
 header {
     @include peripherals;
     top:0;
-    border-bottom:1px solid #000;
+    border-bottom:1px solid $foreground;
 }
 
 
@@ -9,13 +9,13 @@ header {
     height:calc(100vh - (#{$peripheral-height} * 2));
     width:100vw;
     z-index:2;
-    background:rgba(255,255,255,0.85);
+    background:$background;
     position:fixed;
     top:$peripheral-height;
     left:-100vw;
     transition:left $transition-time ease-out;
     display:grid;
-    grid-template-columns: 21vw 79vw;
+    grid-template-columns: 42vw 1fr;
 
     &.active {
         left:0;
@@ -23,7 +23,7 @@ header {
 
     &__sidebar {
         height:100%;
-        border-right:2px solid #000;
+        border-right:2px solid $foreground;
         padding:1em;
     }
 
@@ -64,7 +64,7 @@ header {
     width:21vw;
     height:100%;
     overflow:scroll;
-    border-right:1px solid #000;
+    border-right:1px solid $foreground;
     
     transition:width $transition-time ease-out;
     
@@ -77,11 +77,11 @@ header {
     scrollbar-width: none;  /* Firefox */
 
     &.truth {
-        background:#000;
-        color:#FFF;
+        background:$foreground;
+        color:$background;
         
         & .close {
-            color:#FFF;
+            color:$foreground;
         }
     }
 
@@ -100,7 +100,7 @@ header {
       }
 
     & .close {
-        color:#000;
+        color:$foreground;
         display:none;
         position:absolute;
         top:10px;
@@ -111,7 +111,7 @@ header {
         cursor:pointer;
 
         &:hover {
-            color:#000;
+            color:$foreground;
             opacity:0.75; 
         }
     }
@@ -138,9 +138,18 @@ header {
     margin:auto;
 }
 
+
+.table-item:nth-child(odd) {
+    transform:translateX(-5vw);
+  }
+  
+  .table-item:nth-child(even) {
+    transform:translateX(5vw);
+  }
+
 footer {
     @include peripherals;
     bottom:0;
-    border-top:1px solid #000;
+    border-top:1px solid $foreground;
     
 }

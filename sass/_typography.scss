@@ -10,12 +10,25 @@
     font-weight:bold;
 }
 
+
+@font-face {
+    font-family: 'Lettera';
+    src: url('../fonts/Lettera-Regular.otf') format('opentype');
+    font-weight:normal;
+}
+
+
+
+
+
+
 body {
-    font-size:20px;
+    font-family:freight-text-pro;
+    font-size:18px;
 }
 
 h3 {
-    font-family:courier;
+    font-family:'Lettera', Courier, monospace;
     font-weight:normal;
     font-size:1rem;
 }

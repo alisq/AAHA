@@ -8,8 +8,8 @@
 }
 
 html, body {
-    // background: fixed url('../img/gradient.jpg');
-    // color: $white;
+     background: $background;
+     color: $foreground;
     min-height:100vh;
     background-size:200vw;
     overscroll-behavior-y: none;

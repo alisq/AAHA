@@ -7,27 +7,36 @@
 // },500)
 
 
-
-$("#test-1").click(function(){
-  $("#big-title").toggleClass("active")
-  $("#test-layers, #test-statement, #test-purchase, #test-grid").removeClass("active");
-})
-
-$("#test-2").click(function(){
-  $("#test-layers, #test-statement, #test-purchase").toggleClass("active")
-  $("#big-title, #test-grid").removeClass("active");
-})
-
-$("#test-3").click(function(){
-  $("#test-grid").toggleClass("active")
-  $("#test-layers, #test-statement, #test-purchase, #big-title").removeClass("active");
+$("header, footer").hover(function(){
+  $("#big-title").fadeIn(300)
+}, function(){
+  $("#big-title").fadeOut(300)
 })
 
 
-$("#test-4").click(function(){
+// $("#test-1").click(function(){
+//   $("#big-title").toggleClass("active")
+//   $("#test-layers, #test-statement, #test-purchase, #test-grid").removeClass("active");
+// })
+
+// $("#test-2").click(function(){
+//   $("#test-layers, #test-statement, #test-purchase").toggleClass("active")
+//   $("#big-title, #test-grid").removeClass("active");
+// })
+
+// $("#test-3").click(function(){
+//   $("#test-grid").toggleClass("active")
+//   $("#test-layers, #test-statement, #test-purchase, #big-title").removeClass("active");
+// })
+
+
+// $("#test-4").click(function(){
   
-  $("#test-grid, #test-layers, #test-statement, #test-purchase, #big-title").removeClass("active");
-})
+//   $("#test-grid, #test-layers, #test-statement, #test-purchase, #big-title").removeClass("active");
+// })
+
+
+
 $("#take-action").click(function(){
   $("#action, #take-action").toggleClass("active")
 })
@@ -40,13 +49,13 @@ $(".campaign .close").click(function(){
 
 $(".campaign h2, .campaign h3, .campaign p, .campaign img").click(function(e){
   
-  if (!$(this).parent().parent().hasClass("active")) {
+  if (!$(this).closest('.campaign').hasClass("active")) {
       $(".campaign.active").removeClass("active");
-      $(this).parent().parent().addClass("active");
+      $(this).closest('.campaign').addClass("active");
 
       $("#campaigns").addClass("active");
 
-      $("#breadcrumb").html(" "+$(this).parent().parent().find(".top-zone h3").text()+" > "+$(this).parent().parent().find(".top-zone h2").text())
+      $("#breadcrumb").html(" "+$(this).closest('.campaign').find(".top-zone h3").text()+" > "+$(this).closest('.campaign').find(".top-zone h2").text())
 
   }
   
