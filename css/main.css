@@ -121,6 +121,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #1e211a;
   top: 0;
   border-bottom: 1px solid #eeeed7; }
   header h1 {
@@ -201,8 +202,8 @@ header {
     color: #eeeed7;
     display: none;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0;
+    right: 0;
     background: transparent;
     border: none;
     font-size: 50px;
@@ -236,6 +237,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #1e211a;
   bottom: 0;
   border-top: 1px solid #eeeed7; }
 
@@ -326,3 +328,33 @@ footer {
     left: 0; }
   100% {
     left: -2500vh; } }
+
+@media (max-width: 1000px) {
+  .cover {
+    display: none; }
+  #campaigns {
+    width: 100vw;
+    height: auto; }
+    #campaigns.active .campaign {
+      width: 100%; }
+  #campaigns.active .campaign:not(.active) .top-zone {
+    transform: none; }
+  .campaign {
+    width: 100vw;
+    height: 10vh;
+    overflow: hidden;
+    border-top: 1px solid #eeeed7;
+    display: block; }
+    .campaign .bottom-zone {
+      display: none; }
+    .campaign.active {
+      height: auto;
+      width: 100vw !important; }
+      .campaign.active .bottom-zone {
+        display: block; } }
+
+#action {
+  grid-template-columns: 1fr; }
+
+footer {
+  display: none; }

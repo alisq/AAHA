@@ -1,0 +1,55 @@
+@media (max-width:1000px) {
+    
+
+.cover {
+    display:none;
+}    
+
+#campaigns {
+    width:100vw;
+    height:auto;
+
+    &.active .campaign {
+        width:100%;
+    }
+}
+
+#campaigns.active .campaign:not(.active) .top-zone {
+    transform:none;
+}
+
+.campaign {
+    width:100vw;
+    height:10vh;
+    overflow:hidden;
+    border-top:1px solid $foreground;
+    display:block;
+
+    & .bottom-zone {
+        display:none;
+    }
+
+    &.active {
+        height:auto;
+        width:100vw!important;
+
+        & .bottom-zone {
+            display:block;
+        }
+    }
+
+
+}
+
+}
+
+
+
+
+#action {
+    grid-template-columns: 1fr;;
+}
+
+footer {
+    display:none;
+}
