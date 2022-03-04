@@ -53,6 +53,11 @@ h3 {
 h1, h2 {
   font-family: 'Sukima'; }
 
+h4 {
+  font-family: 'Sukima';
+  font-size: 1.2em;
+  line-height: 1.2; }
+
 p {
   margin: 0.5em 0; }
 
@@ -252,6 +257,9 @@ footer {
   justify-content: center;
   align-items: center;
   background: #1e211a; }
+  .cover,
+  .cover img {
+    cursor: pointer; }
 
 #test-menu {
   position: fixed;
@@ -351,10 +359,8 @@ footer {
       height: auto;
       width: 100vw !important; }
       .campaign.active .bottom-zone {
-        display: block; } }
-
-#action {
-  grid-template-columns: 1fr; }
-
-footer {
-  display: none; }
+        display: block; }
+  #action {
+    grid-template-columns: 1fr; }
+  footer {
+    display: none; } }

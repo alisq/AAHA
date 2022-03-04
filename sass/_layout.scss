@@ -194,4 +194,10 @@ footer {
     justify-content: center;
     align-items: center;
     background:$background;
+    
+    &,
+    & img {
+        cursor:pointer;
+    }
+    
 }
