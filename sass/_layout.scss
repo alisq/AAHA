@@ -3,12 +3,24 @@ header {
     top:0;
     border-bottom:1px solid $foreground;
 
-    & h1:first-child {
-        border-right:1px solid $foreground;
+    & h1 {
+        
         width:50%;
         height:100%;
         display:flex;
         align-items: center;
+
+        &:hover {
+            background:$foreground;
+            color:$background;
+        }
+
+        &:first-child {
+            border-right:1px solid $foreground;
+        }
+        &:last-child {
+            justify-content: end;
+        }
     }
 }
 
@@ -71,7 +83,8 @@ header {
     display:inline-block;
     width:21vw;
     height:100%;
-    overflow:scroll;
+    overflow-y:scroll;
+    overflow-x:hidden;
     border-right:1px solid $foreground;
     
     transition:width $transition-time ease-out;

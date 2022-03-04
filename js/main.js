@@ -7,6 +7,30 @@
 // },500)
 
 
+
+const menu = `
+<div class="button-campaign" data-section="#section-01"></div>
+<div class="button-campaign" data-section="#section-02"></div>
+<div class="button-campaign" data-section="#section-03"></div>
+<div class="button-campaign" data-section="#section-04"></div>
+<div class="button-campaign" data-section="#section-05"></div>
+<div class="button-campaign" data-section="#section-06"></div>
+<div class="button-campaign" data-section="#section-07"></div>
+<div class="button-campaign" data-section="#section-08"></div>
+<div class="button-campaign" data-section="#section-09"></div>
+<div class="button-campaign" data-section="#section-10"></div>
+<div class="button-campaign" data-section="#section-11"></div>
+`
+
+
+$(document).on('click','.button-campaign', function(){
+    var t = $(this).data("section");
+    $.scrollTo(t,1000)
+    setTimeout(function(){
+      $(t+' h2').click();
+    },1200);
+})
+
 $("header, footer").hover(function(){
   $("#big-title").fadeIn(300)
 }, function(){
@@ -39,10 +63,13 @@ $("header, footer").hover(function(){
 
 $("#take-action").click(function(){
   $("#action, #take-action").addClass("active")
+
+  $("#breadcrumb").html("TAKE ACTION >  Resources and Map")
 })
 
 $("#campaign-button").click(function(){
   $("#action, #take-action").removeClass("active")
+  $("#breadcrumb").html(menu)
 })
 
 
@@ -51,7 +78,7 @@ $("#campaign-button").click(function(){
 $(".campaign .close").click(function(){  
   $(".campaign").removeClass("active");  
   $("#campaigns").removeClass("active");
-  $("#breadcrumb").html("");
+  $("#breadcrumb").html(menu);
 })
 
 $(".campaign h2, .campaign h3, .campaign p, .campaign img").click(function(e){
@@ -138,13 +165,14 @@ typewriterLienation  = new Typewriter(lienation, {
 
 
 
-$("footer").on('mouseover',function(){
+$("footer").hover(function(){
   typewriterRchiects
   .pauseFor(initialPause)
   .typeString('rchitecture')
   .pauseFor(completedPause)
-  .start()
   .deleteChars(11)
+  
+  .start()
 
 
   typewriterGainst
@@ -154,6 +182,7 @@ $("footer").on('mouseover',function(){
   .start()
   .deleteChars(6)
   
+  
 
   typewriterOusing
   .pauseFor(initialPause)
@@ -162,6 +191,7 @@ $("footer").on('mouseover',function(){
   .start()
   .deleteChars(6)
   
+  
 
   typewriterLienation
   .pauseFor(initialPause)
@@ -169,6 +199,7 @@ $("footer").on('mouseover',function(){
   .pauseFor(completedPause+(letterSpeed*2*2))
   .start()
   .deleteChars(9)
+  
   
 
 })
