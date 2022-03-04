@@ -86,7 +86,8 @@ button {
   padding: 0;
   align-items: center; }
   #campaigns.active .campaign:not(.active) .top-zone h2, #campaigns.active .campaign:not(.active) .top-zone h3 {
-    display: inline; }
+    isplay: inline-block;
+    margin-right: 1em; }
 
 header {
   position: fixed;
@@ -98,6 +99,12 @@ header {
   padding: 0 0.5em;
   top: 0;
   border-bottom: 1px solid #eeeed7; }
+  header h1:first-child {
+    border-right: 1px solid #eeeed7;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center; }
 
 #action {
   height: calc(100vh - (50px * 2));
@@ -145,7 +152,10 @@ header {
     background: #eeeed7;
     color: #000; }
     .campaign.truth .close {
-      color: #eeeed7; }
+      color: #000; }
+      .campaign.truth .close:hover {
+        color: #000;
+        opacity: 0.5; }
   .campaign .bottom-zone {
     opacity: 1;
     transition: opacity 0.4s ease-out; }

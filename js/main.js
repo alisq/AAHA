@@ -64,7 +64,18 @@ $(".campaign h2, .campaign h3, .campaign p, .campaign img").click(function(e){
 
 
 //MAP STUFF
-var bigmap = L.map('action__map').setView([49.8738449,-97.432404], 4.2);
+
+
+
+var southEast = L.latLng(36.950024,-58.2220568),
+    northWest = L.latLng(78.8151074,-140.90927),
+    bounds = L.latLngBounds(southEast, northWest);
+
+
+
+var bigmap = L.map('action__map').fitBounds(bounds);
+
+
 
 L.tileLayer(
   'https://api.mapbox.com/styles/v1/iamasq/cl02nf3ov001415p76k2hrty5/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiaWFtYXNxIiwiYSI6ImNrc296bmRvaDAxMGkydnBsNGcwMzQwdGcifQ.PkRl94Sjs9H2IM0auw-zdg', {

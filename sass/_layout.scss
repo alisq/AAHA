@@ -2,6 +2,14 @@ header {
     @include peripherals;
     top:0;
     border-bottom:1px solid $foreground;
+
+    & h1:first-child {
+        border-right:1px solid $foreground;
+        width:50%;
+        height:100%;
+        display:flex;
+        align-items: center;
+    }
 }
 
 
@@ -81,7 +89,12 @@ header {
         color:$background;
         
         & .close {
-            color:$foreground;
+            color:$background;
+
+            &:hover {
+                color:$background;
+                opacity:0.5;
+            }
         }
     }
 
