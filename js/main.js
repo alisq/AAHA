@@ -142,13 +142,13 @@ L.tileLayer(
 
 L.marker([49.285124,-123.0950448], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.righttoremain.ca'>Right to Remain</a></strong><br />Vancouver, BC");
 L.marker([52.1504533,-106.7344495], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://idlenomore.ca/one-house-many-nations/'>Idle No More: One House Many Nations</a></strong><br />Saskatoon,SK");
-L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://arcticindigenouswellness.org'></a></strong><br />Yellowknife, YT");
-L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='http://www.blackurbanismto.com'></a></strong><br />Toronto, ON");
-L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='http://www.pnlt.ca'></a></strong><br />Toronto, ON");
-L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.frapru.qc.ca'></a></strong><br />Montreal, QC");
-L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.batirsonquartier.com'></a></strong><br />Montreal, QC");
-L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.briqueparbrique.com'></a></strong><br />Montreal, QC");
-L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.ahans.ca'></a></strong><br />Halifax, NS");
+L.marker([62.4748444,-114.4790337], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://arcticindigenouswellness.org'>Arctic Indigenous Wellness</a></strong><br />Yellowknife, NT");
+L.marker([43.6977734,-79.4421438], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='http://www.blackurbanismto.com'>Black Urbanism Toronto</a></strong><br />Toronto, ON");
+L.marker([43.6377771,-79.4400825], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='http://www.pnlt.ca'>Parkdale Neighborhood Land Trust</a></strong><br />Toronto, ON");
+L.marker([45.5192285,-73.5636551], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.frapru.qc.ca'>Le Front d’action populaire en réaménagement urbain</a></strong><br />Montreal, QC");
+L.marker([45.4830294,-73.569556], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.batirsonquartier.com'>BÂTIR SON QUARTIER</a></strong><br />Montreal, QC");
+L.marker([45.5579564,-73.8703833], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.briqueparbrique.com'>Brique par Brique</a></strong><br />Montreal, QC");
+L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.ahans.ca'>Affordable Housing Association of Nova Scotia</a></strong><br />Halifax, NS");
 L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.halifaxmutualaid.com'></a></strong><br />Halifax, NS");
 
   $(".cover").click(function(){
