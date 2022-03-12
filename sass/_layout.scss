@@ -127,15 +127,33 @@ header {
         display: none;
       }
 
-    & .close {
-        color:$foreground;
+
+      & .top-menu {
         display:none;
         position:absolute;
         top:0;
         right:0;
+        font-size:50px;
+      }
+
+
+
+    & .take-action-internal {
+        font-family: 'Sukima';
+        font-size: 21px;
+        line-height: 1.2;
+        font-weight:bold;
+        text-transform: uppercase;
+        cursor:pointer;
+        transform: translateY(-3px);
+    }
+
+    & .close {
+        color:$foreground;
         background:transparent;
         border:none;
         font-size:50px;
+        
         cursor:pointer;
  
         &:hover {
@@ -153,8 +171,10 @@ header {
     &.active {
         width:calc(100vw - 480px)!important;
 
-        & .close {
-            display:block;
+        & .top-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -164,6 +184,17 @@ header {
 .bottom-zone {
     max-width:1100px;
     margin:auto;
+}
+
+
+.take-action-section {
+    padding-bottom:2em;
+    margin-top:2em;
+    border-top:1px solid $foreground;
+
+    & h2 {
+        margin:0.5em 0 ;
+    }
 }
 
 
@@ -194,6 +225,8 @@ footer {
     justify-content: center;
     align-items: center;
     background:$background;
+
+    display:none;
     
     &,
     & img {

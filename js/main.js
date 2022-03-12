@@ -92,6 +92,12 @@ $(".campaign h2, .campaign h3, .campaign p, .campaign img").click(function(e){
       $("#breadcrumb").html(" "+$(this).closest('.campaign').find(".top-zone h3").text()+" > "+$(this).closest('.campaign').find(".top-zone h2").text())
 
   }
+
+
+  $(".take-action-internal").click(function(){
+  
+    $(".campaign").scrollTo('.take-action-section',600)
+  })
   
 })
 
@@ -100,6 +106,17 @@ $(".campaign h2, .campaign h3, .campaign p, .campaign img").click(function(e){
 //MAP STUFF
 
 
+
+var aahaIcon = L.icon({
+  iconUrl: '../img/aaha-marker.png',
+//  shadowUrl: 'leaf-shadow.png',
+
+  iconSize:     [50, 55], // size of the icon
+  //shadowSize:   [50, 64], // size of the shadow
+  iconAnchor:   [0, 55], // point of the icon which will correspond to marker's location
+  //shadowAnchor: [4, 62],  // the same for the shadow
+  popupAnchor:  [27, -50] // point from which the popup should open relative to the iconAnchor
+});
 
 var southEast = L.latLng(36.950024,-58.2220568),
     northWest = L.latLng(78.8151074,-140.90927),
@@ -120,7 +137,19 @@ L.tileLayer(
   }).addTo(bigmap);
 
   
+  L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://cohousing.ca'>The Canadian Cohousing Network</a></strong><br />Vancouver, BC");
 
+
+L.marker([49.285124,-123.0950448], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.righttoremain.ca'>Right to Remain</a></strong><br />Vancouver, BC");
+L.marker([52.1504533,-106.7344495], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://idlenomore.ca/one-house-many-nations/'>Idle No More: One House Many Nations</a></strong><br />Saskatoon,SK");
+L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://arcticindigenouswellness.org'></a></strong><br />Yellowknife, YT");
+L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='http://www.blackurbanismto.com'></a></strong><br />Toronto, ON");
+L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='http://www.pnlt.ca'></a></strong><br />Toronto, ON");
+L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.frapru.qc.ca'></a></strong><br />Montreal, QC");
+L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.batirsonquartier.com'></a></strong><br />Montreal, QC");
+L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.briqueparbrique.com'></a></strong><br />Montreal, QC");
+L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.ahans.ca'></a></strong><br />Halifax, NS");
+L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.halifaxmutualaid.com'></a></strong><br />Halifax, NS");
 
   $(".cover").click(function(){
     $(this).fadeOut(200);

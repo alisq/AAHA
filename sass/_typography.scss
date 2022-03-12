@@ -141,7 +141,11 @@ button,
     align-items: center;
 
     & h2, & h3 {
-        isplay: inline-block;
+      display: inline-block;
     margin-right: 1em;
     }
+}
+h3.callout {
+    font-family: freight-text-pro;
+    font-size:36px;
 }
