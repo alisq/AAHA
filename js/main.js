@@ -148,8 +148,8 @@ L.marker([43.6377771,-79.4400825], {icon: aahaIcon}).addTo(bigmap).bindPopup("<s
 L.marker([45.5192285,-73.5636551], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.frapru.qc.ca'>Le Front d’action populaire en réaménagement urbain</a></strong><br />Montreal, QC");
 L.marker([45.4830294,-73.569556], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.batirsonquartier.com'>BÂTIR SON QUARTIER</a></strong><br />Montreal, QC");
 L.marker([45.5579564,-73.8703833], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.briqueparbrique.com'>Brique par Brique</a></strong><br />Montreal, QC");
-L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.ahans.ca'>Affordable Housing Association of Nova Scotia</a></strong><br />Halifax, NS");
-L.marker([49.17880844315337, -122.65427031312078], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.halifaxmutualaid.com'></a></strong><br />Halifax, NS");
+L.marker([44.6730391,-63.5822916], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.ahans.ca'>Affordable Housing Association of Nova Scotia</a></strong><br />Halifax, NS");
+L.marker([44.6421694,-63.6604926], {icon: aahaIcon}).addTo(bigmap).bindPopup("<strong><a href='https://www.halifaxmutualaid.com'>Halifax Mutual Aid</a></strong><br />Halifax, NS");
 
   $(".cover").click(function(){
     $(this).fadeOut(200);

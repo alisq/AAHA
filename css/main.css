@@ -6,8 +6,8 @@
   padding: 0; }
 
 html, body {
-  background: #1e211a;
-  color: #eeeed7;
+  background: #ff2f2f;
+  color: black;
   min-height: 100vh;
   background-size: 200vw;
   overscroll-behavior-y: none;
@@ -34,7 +34,7 @@ body {
 
 a:link,
 a:visited {
-  color: #eeeed7;
+  color: black;
   text-decoration: underline; }
 
 a:hover,
@@ -43,7 +43,7 @@ a:active {
 
 .truth a:link,
 .truth a:visited {
-  color: #1e211a; }
+  color: #ff2f2f; }
 
 h3 {
   font-family: 'Lettera', Courier, monospace;
@@ -68,9 +68,9 @@ p {
   text-align: right; }
 
 .button-campaign {
-  width: 15px;
-  height: 15px;
-  background: #eeeed7;
+  width: 10px;
+  height: 10px;
+  background: black;
   display: inline-block;
   margin: 5px;
   cursor: pointer;
@@ -130,9 +130,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1e211a;
+  background-color: #ff2f2f;
   top: 0;
-  border-bottom: 1px solid #eeeed7; }
+  border-bottom: 1px solid black; }
   header h1 {
     width: 50%;
     height: 100%;
@@ -141,10 +141,10 @@ header {
     padding: 0 0.5em;
     cursor: pointer; }
     header h1:hover {
-      background: #eeeed7;
-      color: #1e211a; }
+      background: black;
+      color: #ff2f2f; }
     header h1:first-child {
-      border-right: 1px solid #eeeed7; }
+      border-right: 1px solid black; }
     header h1:last-child {
       justify-content: end; }
 
@@ -152,7 +152,7 @@ header {
   height: calc(100vh - (50px * 2));
   width: 100vw;
   z-index: 2;
-  background: #1e211a;
+  background: #ff2f2f;
   position: fixed;
   top: 50px;
   left: -100vw;
@@ -163,13 +163,13 @@ header {
     left: 0; }
   #action__sidebar {
     height: 100%;
-    border-right: 2px solid #eeeed7;
+    border-right: 2px solid black;
     padding: 1em; }
 
 #campaigns {
   position: relative;
   top: 50px;
-  width: 231vw;
+  width: 294vw;
   height: calc(100vh - (50px * 2));
   overflow-y: hidden; }
   #campaigns.active {
@@ -183,7 +183,7 @@ header {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  border-right: 1px solid #eeeed7;
+  border-right: 1px solid black;
   transition: width 0.4s ease-out;
   position: relative;
   padding: 1em;
@@ -192,12 +192,12 @@ header {
   scrollbar-width: none;
   /* Firefox */ }
   .campaign.truth {
-    background: #eeeed7;
-    color: #1e211a; }
+    background: black;
+    color: #ff2f2f; }
     .campaign.truth .close {
-      color: #1e211a; }
+      color: #ff2f2f; }
       .campaign.truth .close:hover {
-        color: #1e211a;
+        color: #ff2f2f;
         opacity: 0.5; }
   .campaign .bottom-zone {
     opacity: 1;
@@ -222,13 +222,13 @@ header {
     cursor: pointer;
     transform: translateY(-3px); }
   .campaign .close {
-    color: #eeeed7;
+    color: black;
     background: transparent;
     border: none;
     font-size: 50px;
     cursor: pointer; }
     .campaign .close:hover {
-      color: #eeeed7;
+      color: black;
       opacity: 0.75; }
   .campaign img {
     width: 100%;
@@ -248,7 +248,7 @@ header {
 .take-action-section {
   padding-bottom: 2em;
   margin-top: 2em;
-  border-top: 1px solid #eeeed7; }
+  border-top: 1px solid black; }
   .take-action-section h2 {
     margin: 0.5em 0; }
 
@@ -265,9 +265,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1e211a;
+  background-color: #ff2f2f;
   bottom: 0;
-  border-top: 1px solid #eeeed7; }
+  border-top: 1px solid black; }
+  footer h1 {
+    padding-right: 0.5em; }
 
 .cover {
   position: fixed;
@@ -279,7 +281,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #1e211a;
+  background: #ff2f2f;
   display: none; }
   .cover,
   .cover img {
@@ -375,7 +377,7 @@ footer {
     width: 100vw;
     height: 10vh;
     overflow: hidden;
-    border-top: 1px solid #eeeed7;
+    border-top: 1px solid black;
     display: block; }
     .campaign .bottom-zone {
       display: none; }

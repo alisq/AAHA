@@ -60,7 +60,7 @@ header {
     
     position:relative;
     top:$peripheral-height;
-    width:231vw;
+    width:294vw;
     height:calc(100vh - (#{$peripheral-height} * 2));
     overflow-y:hidden;
     
@@ -210,6 +210,10 @@ footer {
     @include peripherals;
     bottom:0;
     border-top:1px solid $foreground;
+
+    & h1 {
+        padding-right:0.5em;
+    }
     
 }
 
