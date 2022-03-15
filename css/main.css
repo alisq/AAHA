@@ -121,7 +121,7 @@ button {
 
 h3.callout {
   font-family: freight-text-pro;
-  font-size: 36px; }
+  font-size: 27px; }
 
 header {
   position: fixed;
@@ -163,6 +163,7 @@ header {
     left: 0; }
   #action__sidebar {
     height: 100%;
+    overflow-y: scroll;
     border-right: 2px solid black;
     padding: 1em; }
 
@@ -371,16 +372,20 @@ footer {
     height: auto; }
     #campaigns.active .campaign {
       width: 100%; }
+  .campaign:not(.active) br {
+    display: none; }
   #campaigns.active .campaign:not(.active) .top-zone {
     transform: none; }
   .campaign {
     width: 100vw;
-    height: 10vh;
+    min-height: 4.2em;
     overflow: hidden;
     border-top: 1px solid black;
     display: block; }
     .campaign .bottom-zone {
       display: none; }
+    .campaign .top-menu {
+      right: -30px; }
     .campaign.active {
       height: auto;
       width: 100vw !important; }
@@ -388,5 +393,15 @@ footer {
         display: block; }
   #action {
     grid-template-columns: 1fr; }
+  header {
+    display: block;
+    z-index: 100;
+    background: #ff2f2f; }
+    header h1 {
+      width: 100%; }
+      header h1:first-child {
+        border-right: none;
+        justify-content: center; }
+  #take-action,
   footer {
     display: none; } }

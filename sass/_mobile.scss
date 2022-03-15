@@ -14,19 +14,30 @@
     }
 }
 
+
+.campaign:not(.active) br {
+    display:none;
+}
+
 #campaigns.active .campaign:not(.active) .top-zone {
     transform:none;
+
+
 }
 
 .campaign {
     width:100vw;
-    height:10vh;
+    min-height: 4.2em;
     overflow:hidden;
     border-top:1px solid $foreground;
     display:block;
 
     & .bottom-zone {
         display:none;
+    }
+
+    .top-menu {
+        right:-30px;
     }
 
     &.active {
@@ -47,6 +58,22 @@
     grid-template-columns: 1fr;;
 }
 
+
+header {
+    display:block;
+    z-index:100;
+    background:$background;
+    & h1 {
+        width:100%;
+
+        &:first-child {
+            border-right: none;
+            justify-content: center;
+        }
+    }
+}
+
+#take-action,
 footer {
     display:none;
 }

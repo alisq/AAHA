@@ -45,6 +45,7 @@ header {
 
     &__sidebar {
         height:100%;
+        overflow-y:scroll;
         border-right:2px solid $foreground;
         padding:1em;
     }
