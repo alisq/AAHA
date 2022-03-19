@@ -70,6 +70,10 @@ header {
     }
     &.active .campaign{
         width:20px;
+
+        & .top-zone h3.hide-collapsed {
+            display:none; 
+        }
         
         
     }

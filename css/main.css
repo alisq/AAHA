@@ -61,6 +61,13 @@ h4 {
 p {
   margin: 0.5em 0; }
 
+.team_description {
+  line-height: 1.4em; }
+
+.team_description span {
+  background: black;
+  color: #ff2f2f; }
+
 .caption {
   margin-top: -0.5em;
   font-size: 0.75em;
@@ -177,6 +184,8 @@ header {
     width: 100vw; }
   #campaigns.active .campaign {
     width: 20px; }
+    #campaigns.active .campaign .top-zone h3.hide-collapsed {
+      display: none; }
 
 .campaign {
   display: inline-block;
