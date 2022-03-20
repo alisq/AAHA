@@ -85,6 +85,9 @@ p {
   transition: transform 0.3s; }
   .button-campaign:hover {
     transform: scale(1.5); }
+  .button-campaign.table-button {
+    background: #ff2f2f;
+    border: 2px solid black; }
 
 button {
   border: 1px solid #000;
@@ -245,6 +248,8 @@ header {
     margin: 0.5em 0; }
   .campaign.active {
     width: calc(100vw - 480px) !important; }
+    .campaign.active#section-10.active {
+      width: calc(100vw - 481px) !important; }
     .campaign.active .top-menu {
       display: flex;
       justify-content: center;

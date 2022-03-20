@@ -176,6 +176,9 @@ header {
     &.active {
         width:calc(100vw - 480px)!important;
 
+        &#section-10.active {
+            width:calc(100vw - 481px)!important;    
+        }
         & .top-menu {
             display: flex;
             justify-content: center;

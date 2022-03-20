@@ -11,15 +11,18 @@
 const menu = `
 <div class="button-campaign" data-section="#section-01"></div>
 <div class="button-campaign" data-section="#section-02"></div>
+<div class="button-campaign table-button" data-section="#section-table-1"></div>
 <div class="button-campaign" data-section="#section-03"></div>
 <div class="button-campaign" data-section="#section-04"></div>
+<div class="button-campaign table-button" data-section="#section-table-2"></div>
 <div class="button-campaign" data-section="#section-05"></div>
 <div class="button-campaign" data-section="#section-06"></div>
+<div class="button-campaign table-button" data-section="#section-table-3"></div>
 <div class="button-campaign" data-section="#section-07"></div>
 <div class="button-campaign" data-section="#section-08"></div>
+<div class="button-campaign table-button" data-section="#section-table-4"></div>
 <div class="button-campaign" data-section="#section-09"></div>
 <div class="button-campaign" data-section="#section-10"></div>
-<div class="button-campaign" data-section="#section-11"></div>
 `
 
 
