@@ -281,10 +281,10 @@ header {
     margin: 0.5em 0; }
 
 .table-item:nth-child(odd) {
-  transform: translateX(-5vw); }
+  float: left; }
 
 .table-item:nth-child(even) {
-  transform: translateX(5vw); }
+  float: right; }
 
 footer {
   position: fixed;

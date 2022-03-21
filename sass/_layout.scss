@@ -228,11 +228,13 @@ header {
 
 
 .table-item:nth-child(odd) {
-    transform:translateX(-5vw);
+    float:left;
+    // transform:translateX(-5vw);
   }
   
   .table-item:nth-child(even) {
-    transform:translateX(5vw);
+      float:right;
+    // transform:translateX(5vw);
   }
 
 footer {
