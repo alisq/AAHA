@@ -165,7 +165,7 @@ L.marker([44.6421694,-63.6604926], {icon: aahaIcon}).addTo(bigmap).bindPopup("<s
 
 
 
-  var rchitecture = document.getElementById('rchitecture');
+  var rchitects = document.getElementById('rchitects');
 var gainst = document.getElementById('gainst');
 var ousing = document.getElementById('ousing');
 var lienation = document.getElementById('lienation');
@@ -173,7 +173,7 @@ var lienation = document.getElementById('lienation');
 letterSpeed = 50;
 initialPause = 1000;
 completedPause = 3000;
-var typewriterRchiects = new Typewriter(rchitecture, {
+var typewriterRchiects = new Typewriter(rchitects, {
   cursor:'',
   loop: false,
   delay: letterSpeed,
@@ -200,7 +200,7 @@ typewriterLienation  = new Typewriter(lienation, {
 $("footer").hover(function(){
   typewriterRchiects
   .pauseFor(initialPause)
-  .typeString('rchitecture')
+  .typeString('rchitects')
   .pauseFor(completedPause)
   .deleteChars(11)
   
