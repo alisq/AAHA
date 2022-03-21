@@ -215,7 +215,8 @@ header {
     z-index: 200;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s; }
+    transition: opacity 0.3s;
+    mix-blend-mode: overlay; }
   .campaign:hover .hover-image {
     opacity: 1; }
   .campaign.active:hover .hover-image {
