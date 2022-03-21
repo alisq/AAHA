@@ -70,9 +70,10 @@ p {
 
 .caption {
   margin-top: -0.5em;
-  font-size: 0.75em;
+  font-size: 0.85em;
   font-family: Sukima;
-  text-align: right; }
+  text-align: right;
+  line-height: 1.2; }
 
 .button-campaign {
   width: 10px;
