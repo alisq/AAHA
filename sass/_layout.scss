@@ -104,6 +104,27 @@ header {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 
+    & .hover-image {
+        position:fixed;
+        top:20px;
+        left:20px;
+        max-width:80vw;
+        z-index:200;
+        opacity:0;
+        pointer-events: none;
+        transition:opacity 0.3s;
+      
+    }
+
+    &:hover .hover-image {
+            
+        opacity:1;
+    }
+
+    &.active:hover .hover-image{
+        opacity:0;
+    }
+
     &.truth {
         background:$foreground;
         color:$background;
